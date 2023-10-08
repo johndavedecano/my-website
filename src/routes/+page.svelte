@@ -35,9 +35,9 @@
     <p>
       My journey in the realm of technology has been a dynamic one, marked by a
       constant thirst for knowledge and a drive to innovate. Armed with a
-      diverse skill set encompassing HTML, CSS, JavaScript, Python, and a
-      plethora of frameworks and libraries, I breathe life into digital ideas
-      and transform them into functional realities.
+      diverse skill set encompassing HTML, CSS, JavaScript, TypeScript, PHP,
+      Elixir, and a plethora of frameworks and libraries, I breathe life into
+      digital ideas and transform them into functional realities.
     </p>
   </div>
   <div class="connect">
