@@ -143,7 +143,7 @@
         .svelte {
             width: 50px;
             height: 50px;
-            background-image: url('svelte.png');
+            background-image: url('/svelte.png');
             background-size: 50%;
             background-position: center;
             background-repeat: no-repeat;
@@ -153,7 +153,7 @@
         .javascript {
             width: 50px;
             height: 50px;
-            background-image: url('js.png');
+            background-image: url('/js.png');
             background-size: 60%;
             background-position: center;
             background-repeat: no-repeat;
@@ -163,7 +163,7 @@
         .node {
             width: 50px;
             height: 50px;
-            background-image: url('node.png');
+            background-image: url('/node.png');
             background-size: 70%;
             background-position: center;
             background-repeat: no-repeat;
@@ -173,7 +173,7 @@
         .react {
             width: 50px;
             height: 50px;
-            background-image: url('react.png');
+            background-image: url('/react.png');
             background-size: 70%;
             background-position: center;
             background-repeat: no-repeat;
@@ -183,7 +183,7 @@
         .vue {
             width: 50px;
             height: 50px;
-            background-image: url('vue.png');
+            background-image: url('/vue.png');
             background-size: 70%;
             background-position: center;
             background-repeat: no-repeat;
@@ -193,7 +193,7 @@
         .php {
             width: 50px;
             height: 50px;
-            background-image: url('php.png');
+            background-image: url('/php.png');
             background-size: 70%;
             background-position: center;
             background-repeat: no-repeat;
@@ -203,7 +203,7 @@
         .aws {
             width: 50px;
             height: 50px;
-            background-image: url('aws.png');
+            background-image: url('/aws.png');
             background-size: 70%;
             background-position: center;
             background-repeat: no-repeat;
@@ -213,7 +213,7 @@
         .typescript {
             width: 50px;
             height: 50px;
-            background-image: url('typescript.png');
+            background-image: url('/typescript.png');
             background-size: 70%;
             background-position: center;
             background-repeat: no-repeat;
@@ -223,7 +223,7 @@
         .laravel {
             width: 50px;
             height: 50px;
-            background-image: url('laravel.png');
+            background-image: url('/laravel.png');
             background-size: 70%;
             background-position: center;
             background-repeat: no-repeat;
@@ -233,7 +233,7 @@
         .css {
             width: 50px;
             height: 50px;
-            background-image: url('css.svg');
+            background-image: url('/css.svg');
             background-size: 90%;
             background-position: center;
             background-repeat: no-repeat;
@@ -245,7 +245,7 @@
 		@apply bg-blue-950 overflow-hidden;
 	}
 	.section-1__bg {
-		background-image: url('bg-1.jpg');
+		background-image: url('/bg-1.jpg');
 		width: 100%;
 		height: 100%;
 		opacity: 0.25;
@@ -260,7 +260,7 @@
 		@apply bg-blue-950  overflow-hidden;
 	}
 	.section-2__bg {
-		background-image: url('bg-2.jpg');
+		background-image: url('/bg-2.jpg');
 		width: 100%;
 		height: 100%;
 		background-size: cover;
@@ -275,7 +275,7 @@
 		opacity: 0.25;
 	}
 	.section-2__person {
-		background-image: url('header-small.png');
+		background-image: url('/header-small.png');
 		width: 100%;
 		height: 100%;
 		background-size: contain;
