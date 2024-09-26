@@ -12,7 +12,6 @@
 				trigger: '.section-1', // Trigger animation on this section
 				start: 'top top', // Start when the top of the section hits the top of the viewport
 				end: 'bottom top', // End when the bottom of the section hits the top of the viewport
-				markers: true,
 				scrub: true
 			}
 		});
@@ -52,7 +51,6 @@
 					trigger: '.section-2', // Trigger animation on this section
 					start: 'top center', // Start when the top of the section hits the top of the viewport
 					end: 'bottom center',
-					markers: true
 				}
 			}
 		);
@@ -68,7 +66,6 @@
 					trigger: '.section-2', // Trigger animation on this section
 					start: 'top center', // Start when the top of the section hits the top of the viewport
 					end: 'bottom center',
-					markers: true
 				}
 			} // Final state
 		);
@@ -78,7 +75,6 @@
 				trigger: '.section-2', // Trigger animation on this section
 				start: 'top center', // Start when the top of the section hits the top of the viewport
 				end: 'bottom center',
-				markers: true,
 				scrub: true
 			}
 		});
