@@ -47,10 +47,11 @@
 				opacity: 0.25,
 				duration: 5,
 				scale: 1.8,
+                height: "100%",
 				scrollTrigger: {
 					trigger: '.section-2', // Trigger animation on this section
 					start: 'top center', // Start when the top of the section hits the top of the viewport
-					end: 'bottom center',
+					end: 'bottom center'
 				}
 			}
 		);
@@ -65,8 +66,33 @@
 				scrollTrigger: {
 					trigger: '.section-2', // Trigger animation on this section
 					start: 'top center', // Start when the top of the section hits the top of the viewport
-					end: 'bottom center',
+					end: 'bottom center'
 				}
+			} // Final state
+		);
+
+		gsap.fromTo(
+			'.section-2 .section-2__box',
+			{  scale: 0 },
+			{
+				duration: 1,
+                scale: 100,
+				scrollTrigger: {
+					trigger: '.section-2', // Trigger animation on this section
+					start: 'top center', // Start when the top of the section hits the top of the viewport
+					end: 'bottom center',
+                    scrub: true
+				}
+			} // Final state
+		);
+
+
+		gsap.fromTo(
+			'.logos div',
+			{  scale: 0 },
+			{
+				duration: 5,
+                scale: 1.1,
 			} // Final state
 		);
 
@@ -104,143 +130,152 @@
 	</div>
 </div>
 <div class="section section-2">
+    <div class="section-2__box"></div>
 	<div class="section-2__person"></div>
 	<div class="section-2__bg"></div>
 	<div class="section__body">
 		<h1 class="section__title">
-			Hello <span class="text-accent">World! Im Dave</span>
+			Hello World! Im Dave
 		</h1>
 		<p class="section__subtitle subtitle-2">
 			Armed with a diverse skill sets, I breathe life into digital ideas and transform them into
 			functional realities.
 		</p>
-        <div class="logos">
-            <div class="svelte"></div>
-            <div class="javascript"></div>
-            <div class="css"></div>
-            <div class="node"></div>
-            <div class="react"></div>
-            <div class="vue"></div>
-            <div class="php"></div>
-            <div class="aws"></div>
-            <div class="typescript"></div>
-            <div class="laravel"></div>
-        </div>
-        <p class="section__subtitle subtitle-2">
-			Lets work together. <a href="https://www.linkedin.com/in/johndavedecano/" class="connect">Connect with me</a>
+		<div class="logos">
+			<div class="svelte"></div>
+			<div class="javascript"></div>
+			<div class="css"></div>
+			<div class="node"></div>
+			<div class="react"></div>
+			<div class="vue"></div>
+			<div class="php"></div>
+			<div class="aws"></div>
+			<div class="typescript"></div>
+			<div class="laravel"></div>
+		</div>
+		<p class="section__subtitle subtitle-2">
+			Lets work together. <a href="https://www.linkedin.com/in/johndavedecano/" class="connect"
+				>Connect with me</a
+			>
 		</p>
 	</div>
 </div>
 
 <style lang="postcss">
-    .connect {
-        @apply text-yellow-300;
-    }
-    .logos {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 16px;
-        .svelte {
-            width: 50px;
-            height: 50px;
-            background-image: url('/svelte.png');
-            background-size: 50%;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-color: white;
-            border-radius: 50%;
+	.connect {
+		@apply text-yellow-300;
+	}
+	.logos {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 16px;
+        margin: auto;
+
+        div {
+			@apply border-purple-950 border;
+			border-width: 5px;
         }
-        .javascript {
-            width: 50px;
-            height: 50px;
-            background-image: url('/js.png');
-            background-size: 60%;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-color: white;
-            border-radius: 50%;
-        }
-        .node {
-            width: 50px;
-            height: 50px;
-            background-image: url('/node.png');
-            background-size: 70%;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-color: white;
-            border-radius: 50%;
-        }
-        .react {
-            width: 50px;
-            height: 50px;
-            background-image: url('/react.png');
-            background-size: 70%;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-color: white;
-            border-radius: 50%;
-        }
-        .vue {
-            width: 50px;
-            height: 50px;
-            background-image: url('/vue.png');
-            background-size: 70%;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-color: white;
-            border-radius: 50%;
-        }
-        .php {
-            width: 50px;
-            height: 50px;
-            background-image: url('/php.png');
-            background-size: 70%;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-color: white;
-            border-radius: 50%;
-        }
-        .aws {
-            width: 50px;
-            height: 50px;
-            background-image: url('/aws.png');
-            background-size: 70%;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-color: white;
-            border-radius: 50%;
-        }
-        .typescript {
-            width: 50px;
-            height: 50px;
-            background-image: url('/typescript.png');
-            background-size: 70%;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-color: white;
-            border-radius: 50%;
-        }
-        .laravel {
-            width: 50px;
-            height: 50px;
-            background-image: url('/laravel.png');
-            background-size: 70%;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-color: white;
-            border-radius: 50%;
-        }
-        .css {
-            width: 50px;
-            height: 50px;
-            background-image: url('/css.svg');
-            background-size: 90%;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-color: white;
-            border-radius: 50%;
-        }
-    }
+		.svelte {
+			width: 50px;
+			height: 50px;
+			background-image: url('/svelte.png');
+			background-size: 50%;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-color: white;
+			border-radius: 50%;
+		}
+		.javascript {
+			width: 50px;
+			height: 50px;
+			background-image: url('/js.png');
+			background-size: 60%;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-color: white;
+			border-radius: 50%;
+		}
+		.node {
+			width: 50px;
+			height: 50px;
+			background-image: url('/node.png');
+			background-size: 70%;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-color: white;
+			border-radius: 50%;
+		}
+		.react {
+			width: 50px;
+			height: 50px;
+			background-image: url('/react.png');
+			background-size: 70%;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-color: white;
+			border-radius: 50%;
+		}
+		.vue {
+			width: 50px;
+			height: 50px;
+			background-image: url('/vue.png');
+			background-size: 70%;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-color: white;
+			border-radius: 50%;
+		}
+		.php {
+			width: 50px;
+			height: 50px;
+			background-image: url('/php.png');
+			background-size: 70%;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-color: white;
+			border-radius: 50%;
+		}
+		.aws {
+			width: 50px;
+			height: 50px;
+			background-image: url('/aws.png');
+			background-size: 70%;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-color: white;
+			border-radius: 50%;
+		}
+		.typescript {
+			width: 50px;
+			height: 50px;
+			background-image: url('/typescript.png');
+			background-size: 70%;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-color: white;
+			border-radius: 50%;
+		}
+		.laravel {
+			width: 50px;
+			height: 50px;
+			background-image: url('/laravel.png');
+			background-size: 70%;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-color: white;
+			border-radius: 50%;
+		}
+		.css {
+			width: 50px;
+			height: 50px;
+			background-image: url('/css.svg');
+			background-size: 90%;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-color: white;
+			border-radius: 50%;
+		}
+	}
 	.section-1 {
 		@apply bg-blue-950 overflow-hidden;
 	}
@@ -257,15 +292,14 @@
 		bottom: 0;
 	}
 	.section-2 {
-		@apply bg-blue-950  overflow-hidden;
+		@apply bg-blue-950  overflow-hidden relative;
 	}
 	.section-2__bg {
-		background-image: url('/bg-2.jpg');
+		background-image: url('/bg-3.jpg');
 		width: 100%;
 		height: 100%;
 		background-size: cover;
 		background-position: bottom left;
-		background-repeat: no-repeat;
 		position: absolute;
 		top: 0;
 		right: 0;
@@ -279,7 +313,7 @@
 		width: 100%;
 		height: 100%;
 		background-size: contain;
-		background-position: bottom right;
+		background-position: top right;
 		background-repeat: no-repeat;
 		position: absolute;
 		top: 0;
@@ -290,22 +324,21 @@
 		opacity: 0.5;
 	}
 	.section-2 .section__body {
-		@apply text-left flex flex-col gap-4;
-        z-index: 2;
+		@apply flex flex-col gap-4 z-10;
 	}
 	.section {
-		@apply w-full flex items-center justify-center relative;
+		@apply w-full flex items-center justify-center relative shadow-lg;
 		min-height: 100vh;
 	}
 	.section__body {
 		@apply px-4 w-full lg:w-1/2 text-center;
 	}
 	.section__title {
-		@apply text-white text-6xl lg:text-8xl;
+		@apply text-white text-2xl lg:text-4xl;
 		text-wrap: balance;
 	}
 	.section__subtitle {
-		@apply text-white text-2xl lg:text-4xl;
+		@apply text-white text-xl lg:text-2xl;
 		text-wrap: balance;
 	}
 	.section__line {
@@ -315,5 +348,8 @@
 	}
 	.text-accent {
 		@apply text-blue-300;
+	}
+	.section-2__box {
+		@apply bg-purple-950 opacity-50 w-full h-full absolute left-0 top-0;
 	}
 </style>
